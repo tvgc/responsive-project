@@ -13,7 +13,7 @@
     --dark-color: ;
     --darken-color: ;
     --white-color: #FFFFFF;
-    --white-color-alt: #cecece;
+    --white-color-alt: #ebebeb;
     --black-color: #000000;
     --black-color-alt: #303030;
 
@@ -84,6 +84,7 @@ img {
 /* ===== CLASS CSS ===== */
 .section {
     padding: 4rem 0 2rem;
+    min-height: 100vh;
 }
 
 .section-title, .section-subtitle {
@@ -97,7 +98,7 @@ img {
 
 .light {
     color: var(--black-color);
-    background-color: var(--white-color-alt);
+    background-color: var(--white-color);
 }
 
 .section-title {
@@ -108,6 +109,11 @@ img {
 .section-subtitle {
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-2);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
 }
 
 /* ===== LAYOUT ===== */
@@ -161,4 +167,45 @@ img {
     background-color: #856B28;
 }
 
+/* ===== SECTION ===== */
+.rs-1 {
+    background-color: var(--white-color);
+}
 
+.rs-1__card {
+    border: 1px solid var(--black-color);
+    border-radius: var(--mb-1-5);
+    padding: 0 0 var(--mb-1);
+    background-color: var(--black-color-alt);
+    padding: 1rem;
+}
+.rs-1__img, .rs-1__card-title {
+    margin-bottom: var(--mb-1);
+}
+
+.rs-1__img {
+    background-color: var(--white-color-alt);
+    border-radius: var(--mb-1);
+}
+
+.rs-1__card-content {
+    text-align: justify;
+}
+
+.rs-1__data {
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* ===== MEDIA QUERRIES ===== */
+@media screen and (min-width: 960px) {
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: var(--first-color);
+}
