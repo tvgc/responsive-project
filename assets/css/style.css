@@ -111,11 +111,6 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.grid {
-    display: grid;
-    gap: 1.5rem;
-}
-
 /* ===== LAYOUT ===== */
 .bd-container {
     max-width: 960px;
@@ -126,6 +121,7 @@ img {
 
 .bd-grid {
     display: grid;
+    gap: 1.5rem;
 }
 
 .bd-flex {
