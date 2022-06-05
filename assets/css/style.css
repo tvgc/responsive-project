@@ -84,7 +84,7 @@ img {
 /* ===== CLASS CSS ===== */
 .section {
     padding: 4rem 0 2rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .section-title, .section-subtitle {
@@ -163,7 +163,7 @@ img {
     background-color: #856B28;
 }
 
-/* ===== SECTION ===== */
+/* ===== SECTION 1 ===== */
 .rs-1 {
     background-color: var(--white-color);
 }
@@ -191,6 +191,45 @@ img {
 .rs-1__data {
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* ===== SECTION 2 ===== */
+.rs-2 {
+    height: calc(100vh - var(--header-height));
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: green;
+    padding: 0;
+    color: #F3F3F3;
+}
+
+.rs-2__desc {
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+.rs-2__1, .rs-2__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rs-2__1 {
+    background-color: #250001;
+}
+
+.rs-2__2 {
+    background-color: #590004;
+}
+
+/* querries */
+@media screen and (min-width: 754px) {
+    .rs-2 {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: green;
+        padding: 0;
+    }
 }
 
 /* ===== MEDIA QUERRIES ===== */
